@@ -1,0 +1,195 @@
+body {
+    background-image: url(images/fondo.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+  }
+  .header {
+    background: rgb(198, 12, 48);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+    width: 100%;
+  }
+  .logo {
+    width: 55px;
+  }
+  .boton {
+    color: white;
+    background: black;
+    border: none;
+    width: 80px;
+    height: 35px;
+    font-family: "Snow Bright";
+    font-size: 1.3rem;
+    border-radius: 3px;
+  }
+  .carousel{
+    padding-top: 73px;
+  }
+  .boton:hover{
+    background: rgb(255, 255, 255);
+    color: black;
+  }
+  .navbar-toggler {
+    border: none;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: white;
+    font-family: "Snow Bright";
+    font-size: 1.3rem;
+  }
+  .dropdown-item {
+    font-family: "MS Gothic";
+    font-size: 1rem;
+  }
+  .nombre {
+    font-family: "Snow Bright";
+    font-size: 1.3rem;
+  }
+  .productos {
+    margin-top: 30px;
+  }
+  .foto {
+    width: 380px;
+  }
+  #menu {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #galeria {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 110px;
+  }
+  .img-item{
+    position: relative;
+    /*display: inline-block;*/
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .b-img-t {
+    font-family: "Snow Bright";
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  #container-galeria {
+    /* display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start; */
+    column-count: 4;
+    column-gap: 0;
+    margin-top: 25px;
+  }
+  .img-item {
+    display: inline-block;
+    margin: 5px 5px;
+  }
+  .img-fluid {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  .img-fluid:hover {
+    width: 97%;
+    transition: ease 0.5s;
+  }
+  .acomp{
+    font-family: "Snow Bright";
+    font-size: 40px;
+    margin: 0;
+  }
+  .marca{
+    font-family: "Letter Sseungi";
+    font-size: 80px;
+    margin: 0;
+  }
+  p{
+    font-family: "Rockford Sans";
+    font-size: 16px;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 400px) {
+    .marca{
+      font-family: "Letter Sseungi";
+      font-size: 40px;
+      margin: 0;
+
+    }
+    .acomp{
+      font-family: "Snow Bright";
+      font-size: 18px;
+      margin: 0;
+    }
+    p{
+    font-family: "Rockford Sans";
+    font-size: 11px;
+    margin: 0;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    #container-galeria {
+      /* display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start; */
+      column-count: 3;
+      column-gap: 0;
+      margin: 10px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    body {
+      background-image: url(images/fondo.jpg);
+      width: 100%;
+      height: 100vh;
+      background-size: cover;
+    }
+
+    #container-galeria {
+      /* display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start; */
+      column-count: 2;
+      column-gap: 0;
+      margin: 0px;
+      margin-top: 25px;
+    }
+  }
+
+  @media screen and (max-width: 568px) {
+    #container-galeria {
+      /* display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start; */
+      column-count: 1;
+      column-gap: 0;
+    }
+  }
+  
+  @font-face {
+    font-family: "Rockford Sans";
+    src: url(../fonts/RockfordSans-Light.otf);
+  }
+  @font-face {
+    font-family: "Snow Bright";
+    src: url(../fonts/SnowBright.ttf);
+  }
+  @font-face {
+    font-family: "MS Gothic";
+    src: url(../fonts/MSGOTHIC.ttf);
+  }
+  @font-face {
+    font-family: "Letter Sseungi";
+    src: url(../fonts/letterSseungi.ttf);
+  }
